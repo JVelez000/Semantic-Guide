@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Git</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1 data-text="Git">Git</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="html.html">HTML</a></li>
+        <li><a href="css.html">CSS</a></li>
+        <li><a href="git.html">Git</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>¿Qué es Git?</h2>
+      <p>Git es un sistema de control de versiones que permite rastrear los cambios en tu código fuente.</p>
+
+      <h2>¿Qué es GitHub?</h2>
+      <p>GitHub es una plataforma para alojar tus repositorios y colaborar con otros desarrolladores.</p>
+
+      <h3>Comandos esenciales</h3>
+<ul>
+  <li><code>git init</code>: Inicializa un repositorio local.</li>
+  <li><code>git add .</code>: Agrega todos los archivos modificados.</li>
+  <li><code>git commit -m "mensaje"</code>: Guarda los cambios con un mensaje.</li>
+  <li><code>git remote add origin URL</code>: Conecta tu repositorio local con GitHub.</li>
+  <li><code>git push -u origin main</code>: Sube tu código al repositorio remoto.</li>
+  <li><code>git pull</code>: Descarga los últimos cambios de GitHub.</li>
+  <li><code>git status</code>: Muestra los archivos que han cambiado.</li>
+  <li><code>git clone URL</code>: Clona un repositorio existente en tu computadora.</li>
+  <li><code>git branch nombre</code>: Crea una nueva rama.</li>
+  <li><code>git checkout nombre</code>: Cambia de rama.</li>
+  <li><code>git merge nombre</code>: Fusiona una rama con otra.</li>
+  <li><code>git log</code>: Muestra el historial de commits.</li>
+</ul>
+
+<h3>Ejemplo:</h3>
+<pre><code>
+git init
+git add .
+git commit -m "Primer commit"
+git remote add origin https://github.com/usuario/repositorio.git
+git push -u origin main
+</code></pre>
+
+<h3>Configuración inicial</h3>
+<p>Para configurar tu identidad en Git:</p>
+<pre><code>
+git config --global user.name "Tu Nombre"
+git config --global user.email "tucorreo@example.com"
+git config --global init.defaultBranch main
+git config --global core.editor nano
+git config --global merge.tool vimdiff
+</code></pre>
+
+
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Semantic-Git-CSS Guide</p>
+  </footer>
+</body>
+</html>
