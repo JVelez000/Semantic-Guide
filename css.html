@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1 data-text="CSS">CSS</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="html.html">HTML</a></li>
+        <li><a href="css.html">CSS</a></li>
+        <li><a href="git.html">Git</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Estilos CSS explicados</h2>
+      <p>Este sitio utiliza una hoja de estilos para aplicar colores, fuentes y diseño general.</p>
+
+      <h3>Fondo degradado</h3>
+<p>Se utiliza <code>linear-gradient()</code> para aplicar un fondo suave. Otros ejemplos:</p>
+<ul>
+  <li><code>background: linear-gradient(to right, #ff9966, #ff5e62);</code></li>
+  <li><code>background: linear-gradient(to top, #43cea2, #185a9d);</code></li>
+  <li><code>background: radial-gradient(circle, #ffffff, #d9afd9);</code></li>
+</ul>
+
+<h3>Ejemplo:</h3>
+<pre><code>
+body {
+  background: linear-gradient(to right, #ff9966, #ff5e62);
+  font-family: 'Rubik', sans-serif;
+}
+</code></pre>
+
+<h3>Fuente Rubik</h3>
+<p>También puedes combinar fuentes:</p>
+<pre><code>
+font-family: 'Rubik', sans-serif;
+font-weight: 400;
+font-style: italic;
+</code></pre>
+
+<h3>Títulos con degradado</h3>
+<pre><code>
+h1 {
+  background: linear-gradient(to right, #f9d423, #ff4e50);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+</code></pre>
+
+<h3>Estructura general</h3>
+<pre><code>
+body {
+  margin: 0;
+  padding: 0 20px;
+}
+
+nav ul {
+  display: flex;
+  gap: 1rem;
+}
+
+section {
+  margin: 40px 0;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+}
+
+a:hover {
+  color: #ff6600;
+}
+
+button {
+  background-color: #4CAF50;
+}
+
+img {
+  max-width: 100%;
+}
+
+h2::before {
+  content: '🧩 ';
+}
+</code></pre>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Semantic-Git-CSS Guide</p>
+  </footer>
+</body>
+</html>
