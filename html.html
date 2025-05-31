@@ -1,196 +1,214 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <title>HTML</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
 </head>
-<body>
-  <header>
-    <h1 data-text="Semantic HTML">Semantic HTML</h1>
+<body class="page">
 
-    <nav>
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="html.html">HTML</a></li>
-        <li><a href="css.html">CSS</a></li>
-        <li><a href="git.html">Git</a></li>
+  <header class="header">
+    <h1 class="header__title" data-text="Semantic HTML">Semantic HTML</h1>
+
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="index.html" class="nav__link">Inicio</a></li>
+        <li class="nav__item"><a href="html.html" class="nav__link">HTML</a></li>
+        <li class="nav__item"><a href="css.html" class="nav__link">CSS</a></li>
+        <li class="nav__item"><a href="git.html" class="nav__link">Git</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
-    <section>
-      <h2>¿Qué es HTML semántico?</h2>
-      <p>HTML semántico se refiere al uso de etiquetas que describen claramente su propósito. Mejora la accesibilidad y facilita el mantenimiento del código.</p>
-      
-      <h3>Etiquetas comunes</h3>
-<p>Algunas etiquetas semánticas incluyen:</p>
-<>
-  <li><code>&lt;header&gt;</code>: Encabezado de una página o sección</li>
-  <li><code>&lt;nav&gt;</code>: Contenedor de enlaces de navegación</li>
-  <li><code>&lt;main&gt;</code>: Contenido principal del documento</li>
-  <li><code>&lt;section&gt;</code>: Agrupación temática del contenido</li>
-  <li><code>&lt;article&gt;</code>: Contenido independiente, como entradas de blog</li>
-  <li><code>&lt;aside&gt;</code>: Contenido relacionado, como barras laterales</li>
-  <li><code>&lt;footer&gt;</code>: Información de pie de página</li>
-  <li><code>&lt;figure&gt;</code>: Contenedor para contenido gráfico</li>
-  <li><code>&lt;figcaption&gt;</code>: Descripción de una figura</li>
-  <li><code>&lt;mark&gt;</code>: Resalta texto importante</li>
-  <li><code>&lt;time&gt;</code>: Representa una hora o fecha</li>
-  <li><code>&lt;details&gt;</code>: Contenedor de detalles colapsables</li>
-  <li><code>&lt;summary&gt;</code>: Título de un bloque &lt;details&gt;</li>
-  <li><code>&lt;dialog&gt;</code>: Cuadro de diálogo o ventana emergente</li>
-  <li><code>&lt;progress&gt;</code>: Barra de progreso</li>
-  <li><code>&lt;meter&gt;</code>: Medidor de un valor dentro de un rango</li>
-  <li><code>&lt;template&gt;</code>: Plantilla para contenido reutilizable</li>
-  <li><code>&lt;slot&gt;</code>: Marcador de posición para contenido dinámico</li>
-  <li><code>&lt;address&gt;</code>: Información de contacto</li>
-  <li><code>&lt;blockquote&gt;</code>: Cita de otro autor</li>
-  <li><code>&lt;cite&gt;</code>: Título de una obra</li>
-  <li><code>&lt;abbr&gt;</code>: Abreviatura o acrónimo</li>
-</ul>
+  <main class="main">
+    <section class="section section--html">
+      <h2 class="section__title">¿Qué es HTML semántico?</h2>
+      <p class="section__text">HTML semántico se refiere al uso de etiquetas que describen claramente su propósito. Mejora la accesibilidad y facilita el mantenimiento del código.</p>
 
-<h3>Ejemplos de uso:</h3>
+      <h3 class="section__subtitle">Etiquetas comunes</h3>
+      <p class="section__text">Algunas etiquetas semánticas incluyen:</p>
+      <ul class="section__list">
+        <li class="section__item"><code>&lt;header&gt;</code>: Encabezado de una página o sección</li>
+        <li class="section__item"><code>&lt;nav&gt;</code>: Contenedor de enlaces de navegación</li>
+        <li class="section__item"><code>&lt;main&gt;</code>: Contenido principal del documento</li>
+        <li class="section__item"><code>&lt;section&gt;</code>: Agrupación temática del contenido</li>
+        <li class="section__item"><code>&lt;article&gt;</code>: Contenido independiente, como entradas de blog</li>
+        <li class="section__item"><code>&lt;aside&gt;</code>: Contenido relacionado, como barras laterales</li>
+        <li class="section__item"><code>&lt;footer&gt;</code>: Información de pie de página</li>
+        <li class="section__item"><code>&lt;figure&gt;</code>: Contenedor para contenido gráfico</li>
+        <li class="section__item"><code>&lt;figcaption&gt;</code>: Descripción de una figura</li>
+        <li class="section__item"><code>&lt;mark&gt;</code>: Resalta texto importante</li>
+        <li class="section__item"><code>&lt;time&gt;</code>: Representa una hora o fecha</li>
+        <li class="section__item"><code>&lt;details&gt;</code>: Contenedor de detalles colapsables</li>
+        <li class="section__item"><code>&lt;summary&gt;</code>: Título de un bloque &lt;details&gt;</li>
+        <li class="section__item"><code>&lt;dialog&gt;</code>: Cuadro de diálogo o ventana emergente</li>
+        <li class="section__item"><code>&lt;progress&gt;</code>: Barra de progreso</li>
+        <li class="section__item"><code>&lt;meter&gt;</code>: Medidor de un valor dentro de un rango</li>
+        <li class="section__item"><code>&lt;template&gt;</code>: Plantilla para contenido reutilizable</li>
+        <li class="section__item"><code>&lt;slot&gt;</code>: Marcador de posición para contenido dinámico</li>
+        <li class="section__item"><code>&lt;address&gt;</code>: Información de contacto</li>
+        <li class="section__item"><code>&lt;blockquote&gt;</code>: Cita de otro autor</li>
+        <li class="section__item"><code>&lt;cite&gt;</code>: Título de una obra</li>
+        <li class="section__item"><code>&lt;abbr&gt;</code>: Abreviatura o acrónimo</li>
+      </ul>
 
-<h4>&lt;header&gt;</h4>
-<pre><code>
-&lt;header&gt;
+      <h3 class="section__subtitle">Ejemplos de uso:</h3>
+
+      <div class="section__example">
+        <h4 class="section__example-title">&lt;header&gt;</h4>
+        <pre class="section__pre"><code class="section__code">&lt;header&gt;
   &lt;h1&gt;Mi Sitio Web&lt;/h1&gt;
 &lt;/header&gt;
 </code></pre>
+      </div>
 
-<h4>&lt;nav&gt;</h4>
-<pre><code>
-&lt;nav&gt;
+      <div class="section__example">
+        <h4 class="section__example-title">&lt;nav&gt;</h4>
+        <pre class="section__pre"><code class="section__code">&lt;nav&gt;
   &lt;a href="index.html"&gt;Inicio&lt;/a&gt;
   &lt;a href="contacto.html"&gt;Contacto&lt;/a&gt;
 &lt;/nav&gt;
 </code></pre>
+      </div>
 
-<h4>&lt;main&gt;</h4>
-<pre><code>
-&lt;main&gt;
+      <div class="section__example">
+        <h4 class="section__example-title">&lt;main&gt;</h4>
+        <pre class="section__pre"><code class="section__code">&lt;main&gt;
   &lt;h2&gt;Contenido Principal&lt;/h2&gt;
 &lt;/main&gt;
 </code></pre>
+      </div>
 
-<h4>&lt;section&gt;</h4>
-<pre><code>
-&lt;section&gt;
+      <div class="section__example">
+        <h4 class="section__example-title">&lt;section&gt;</h4>
+        <pre class="section__pre"><code class="section__code">&lt;section&gt;
   &lt;h2&gt;Noticias&lt;/h2&gt;
   &lt;p&gt;Últimas novedades del día.&lt;/p&gt;
 &lt;/section&gt;
 </code></pre>
+      </div>
 
-<h4>&lt;article&gt;</h4>
-<pre><code>
-&lt;article&gt;
+      <div class="section__example">
+        <h4 class="section__example-title">&lt;article&gt;</h4>
+        <pre class="section__pre"><code class="section__code">&lt;article&gt;
   &lt;h2&gt;Reseña de un libro&lt;/h2&gt;
   &lt;p&gt;Excelente novela histórica...&lt;/p&gt;
 &lt;/article&gt;
 </code></pre>
+      </div>
 
-<h4>&lt;aside&gt;</h4>
-<pre><code>
-&lt;aside&gt;
+      <div class="section__example">
+        <h4 class="section__example-title">&lt;aside&gt;</h4>
+        <pre class="section__pre"><code class="section__code">&lt;aside&gt;
   &lt;p&gt;Contenido relacionado como anuncios o enlaces útiles.&lt;/p&gt;
 &lt;/aside&gt;
 </code></pre>
+      </div>
 
-<h4>&lt;footer&gt;</h4>
-<pre><code>
-&lt;footer&gt;
+      <div class="section__example">
+        <h4 class="section__example-title">&lt;footer&gt;</h4>
+        <pre class="section__pre"><code class="section__code">&lt;footer&gt;
   &lt;p&gt;Derechos reservados 2025&lt;/p&gt;
 &lt;/footer&gt;
 </code></pre>
+      </div>
 
-<h4>&lt;figure&gt; y &lt;figcaption&gt;</h4>
-<pre><code>
-&lt;figure&gt;
+      <div class="section__example">
+        <h4 class="section__example-title">&lt;figure&gt; y &lt;figcaption&gt;</h4>
+        <pre class="section__pre"><code class="section__code">&lt;figure&gt;
   &lt;img src="paisaje.jpg" alt="Paisaje natural"&gt;
   &lt;figcaption&gt;Un hermoso amanecer en la montaña&lt;/figcaption&gt;
 &lt;/figure&gt;
 </code></pre>
+      </div>
 
-<h4>&lt;mark&gt;</h4>
-<pre><code>
-&lt;p&gt;Este es un texto &lt;mark&gt;importante&lt;/mark&gt;.&lt;/p&gt;
+      <div class="section__example">
+        <h4 class="section__example-title">&lt;mark&gt;</h4>
+        <pre class="section__pre"><code class="section__code">&lt;p&gt;Este es un texto &lt;mark&gt;importante&lt;/mark&gt;.&lt;/p&gt;
 </code></pre>
+      </div>
 
-<h4>&lt;time&gt;</h4>
-<pre><code>
-&lt;p&gt;Publicado el &lt;time datetime="2025-05-23"&gt;23 de mayo de 2025&lt;/time&gt;.&lt;/p&gt;
+      <div class="section__example">
+        <h4 class="section__example-title">&lt;time&gt;</h4>
+        <pre class="section__pre"><code class="section__code">&lt;p&gt;Publicado el &lt;time datetime="2025-05-23"&gt;23 de mayo de 2025&lt;/time&gt;.&lt;/p&gt;
 </code></pre>
+      </div>
 
-<h4>&lt;details&gt; y &lt;summary&gt;</h4>
-<pre><code>
-&lt;details&gt;
+      <div class="section__example">
+        <h4 class="section__example-title">&lt;details&gt; y &lt;summary&gt;</h4>
+        <pre class="section__pre"><code class="section__code">&lt;details&gt;
   &lt;summary&gt;Ver más información&lt;/summary&gt;
   &lt;p&gt;Contenido adicional oculto hasta desplegar.&lt;/p&gt;
 &lt;/details&gt;
 </code></pre>
+      </div>
 
-<h4>&lt;dialog&gt;</h4>
-<pre><code>
-&lt;dialog open&gt;
+      <div class="section__example">
+        <h4 class="section__example-title">&lt;dialog&gt;</h4>
+        <pre class="section__pre"><code class="section__code">&lt;dialog open&gt;
   &lt;p&gt;Este es un cuadro de diálogo.&lt;/p&gt;
 &lt;/dialog&gt;
 </code></pre>
+      </div>
 
-<h4>&lt;progress&gt;</h4>
-<pre><code>
-&lt;progress value="70" max="100"&gt;70%&lt;/progress&gt;
+      <div class="section__example">
+        <h4 class="section__example-title">&lt;progress&gt;</h4>
+        <pre class="section__pre"><code class="section__code">&lt;progress value="70" max="100"&gt;70%&lt;/progress&gt;
 </code></pre>
+      </div>
 
-<h4>&lt;meter&gt;</h4>
-<pre><code>
-&lt;meter value="0.6"&gt;60%&lt;/meter&gt;
+      <div class="section__example">
+        <h4 class="section__example-title">&lt;meter&gt;</h4>
+        <pre class="section__pre"><code class="section__code">&lt;meter value="0.6"&gt;60%&lt;/meter&gt;
 </code></pre>
+      </div>
 
-<h4>&lt;template&gt;</h4>
-<pre><code>
-&lt;template id="card-template"&gt;
+      <div class="section__example">
+        <h4 class="section__example-title">&lt;template&gt;</h4>
+        <pre class="section__pre"><code class="section__code">&lt;template id="card-template"&gt;
   &lt;div class="card"&gt;Contenido de tarjeta&lt;/div&gt;
 &lt;/template&gt;
 </code></pre>
+      </div>
 
-<h4>&lt;slot&gt;</h4>
-<pre><code>
-&lt;custom-element&gt;
+      <div class="section__example">
+        <h4 class="section__example-title">&lt;slot&gt;</h4>
+        <pre class="section__pre"><code class="section__code">&lt;custom-element&gt;
   &lt;slot&gt;Contenido predeterminado&lt;/slot&gt;
 &lt;/custom-element&gt;
 </code></pre>
+      </div>
 
-<h4>&lt;address&gt;</h4>
-<pre><code>
-&lt;address&gt;
+      <div class="section__example">
+        <h4 class="section__example-title">&lt;address&gt;</h4>
+        <pre class="section__pre"><code class="section__code">&lt;address&gt;
   Calle 123, Ciudad, País
   &lt;br&gt;
   Email: contacto@ejemplo.com
 &lt;/address&gt;
 </code></pre>
+      </div>
 
-<h4>&lt;blockquote&gt; y &lt;cite&gt;</h4>
-<pre><code>
-&lt;blockquote cite="https://example.com"&gt;
+      <div class="section__example">
+        <h4 class="section__example-title">&lt;blockquote&gt; y &lt;cite&gt;</h4>
+        <pre class="section__pre"><code class="section__code">&lt;blockquote cite="https://example.com"&gt;
   La imaginación es más importante que el conocimiento.
   &lt;cite&gt;Albert Einstein&lt;/cite&gt;
 &lt;/blockquote&gt;
 </code></pre>
+      </div>
 
-<h4>&lt;abbr&gt;</h4>
-<pre><code>
-&lt;p&gt;El &lt;abbr title="Hypertext Markup Language"&gt;HTML&lt;/abbr&gt; es fundamental para la web.&lt;/p&gt;
+      <div class="section__example">
+        <h4 class="section__example-title">&lt;abbr&gt;</h4>
+        <pre class="section__pre"><code class="section__code">&lt;p&gt;El &lt;abbr title="Hypertext Markup Language"&gt;HTML&lt;/abbr&gt; es fundamental para la web.&lt;/p&gt;
 </code></pre>
-
-
+      </div>
     </section>
   </main>
 
-  <footer>
-    <p>© 2025 Semantic-Git-CSS Guide</p>
+  <footer class="footer">
+    <p class="footer__text">© 2025 Semantic-Git-CSS Guide</p>
   </footer>
 </body>
 </html>

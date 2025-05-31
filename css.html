@@ -6,59 +6,59 @@
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
 </head>
-<body>
-  <header>
-    <h1 data-text="CSS">CSS</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="html.html">HTML</a></li>
-        <li><a href="css.html">CSS</a></li>
-        <li><a href="git.html">Git</a></li>
+<body class="page">
+  <header class="header">
+    <h1 class="header__title" data-text="CSS">CSS</h1>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="index.html" class="nav__link">Inicio</a></li>
+        <li class="nav__item"><a href="html.html" class="nav__link">HTML</a></li>
+        <li class="nav__item"><a href="css.html" class="nav__link nav__link--active">CSS</a></li>
+        <li class="nav__item"><a href="git.html" class="nav__link">Git</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
-    <section>
-      <h2>Estilos CSS explicados</h2>
-      <p>Este sitio utiliza una hoja de estilos para aplicar colores, fuentes y diseño general.</p>
+  <main class="main">
+    <section class="section">
+      <h2 class="section__title">Estilos CSS explicados</h2>
+      <p class="section__text">Este sitio utiliza una hoja de estilos para aplicar colores, fuentes y diseño general.</p>
 
-      <h3>Fondo degradado</h3>
-<p>Se utiliza <code>linear-gradient()</code> para aplicar un fondo suave. Otros ejemplos:</p>
-<ul>
-  <li><code>background: linear-gradient(to right, #ff9966, #ff5e62);</code></li>
-  <li><code>background: linear-gradient(to top, #43cea2, #185a9d);</code></li>
-  <li><code>background: radial-gradient(circle, #ffffff, #d9afd9);</code></li>
-</ul>
+      <h3 class="section__subtitle">Fondo degradado</h3>
+      <p class="section__text">Se utiliza <code class="section__code">linear-gradient()</code> para aplicar un fondo suave. Otros ejemplos:</p>
+      <ul class="section__list">
+        <li class="section__item"><code class="section__code">background: linear-gradient(to right, #ff9966, #ff5e62);</code></li>
+        <li class="section__item"><code class="section__code">background: linear-gradient(to top, #43cea2, #185a9d);</code></li>
+        <li class="section__item"><code class="section__code">background: radial-gradient(circle, #ffffff, #d9afd9);</code></li>
+      </ul>
 
-<h3>Ejemplo:</h3>
-<pre><code>
+      <h3 class="section__subtitle">Ejemplo:</h3>
+      <pre class="section__pre"><code class="section__code">
 body {
   background: linear-gradient(to right, #ff9966, #ff5e62);
   font-family: 'Rubik', sans-serif;
 }
-</code></pre>
+      </code></pre>
 
-<h3>Fuente Rubik</h3>
-<p>También puedes combinar fuentes:</p>
-<pre><code>
+      <h3 class="section__subtitle">Fuente Rubik</h3>
+      <p class="section__text">También puedes combinar fuentes:</p>
+      <pre class="section__pre"><code class="section__code">
 font-family: 'Rubik', sans-serif;
 font-weight: 400;
 font-style: italic;
-</code></pre>
+      </code></pre>
 
-<h3>Títulos con degradado</h3>
-<pre><code>
+      <h3 class="section__subtitle">Títulos con degradado</h3>
+      <pre class="section__pre"><code class="section__code">
 h1 {
   background: linear-gradient(to right, #f9d423, #ff4e50);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-</code></pre>
+      </code></pre>
 
-<h3>Estructura general</h3>
-<pre><code>
+      <h3 class="section__subtitle">Estructura general</h3>
+      <pre class="section__pre"><code class="section__code">
 body {
   margin: 0;
   padding: 0 20px;
@@ -93,12 +93,12 @@ img {
 h2::before {
   content: '🧩 ';
 }
-</code></pre>
+      </code></pre>
     </section>
   </main>
 
-  <footer>
-    <p>© 2025 Semantic-Git-CSS Guide</p>
+  <footer class="footer">
+    <p class="footer__text">© 2025 Semantic-Git-CSS Guide</p>
   </footer>
 </body>
 </html>
